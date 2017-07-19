@@ -1,5 +1,5 @@
 baseurl = "https://richardohrvall.netlify.com/"  # End your URL with a `/` trailing slash.
-title = "Academic"
+title = "Richard Öhrvall"
 copyright = "&copy; 2017 Richard Öhrvall"
 theme = "hugo-academic"
 enableEmoji = true
@@ -14,6 +14,10 @@ googleAnalytics = "UA-102816976-1"
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+
+# Set permalinks
+[permalinks]
+    post = "/:year/:month/:day/:slug"
 
 [blackfriday]
   hrefTargetBlank = true
