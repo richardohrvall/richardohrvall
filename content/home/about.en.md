@@ -33,5 +33,7 @@ weight = 1
 +++
 
 
-Richard Öhrvall is a researcher at the Research Institute of Industrial Economics (IFN) and a PhD candidate in political science at Linköping University. His research interests include political participation, social trust and public corruption. He has been published in journals such as Acta Politica, Electoral Studies, Local Government Studies, and in several books.
+I am a PhD candidate in political science at Linköping University, a researcher at the Research Institute of Industrial Economics (IFN), and affiliated to The Institute of Analytical Sociology. I also currently on leave from Statistics Sweden. My research interests include political participation, social trust and public corruption. I also have an interest in statisticsal methods and visualization of data.
+
+This blog is under development. 
  

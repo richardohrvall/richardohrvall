@@ -18,7 +18,7 @@ defaultContentLanguageInSubdir = true
 # Set permalinks
 [permalinks]
     post = "/:year/:month/:day/:slug"
-
+    
 [blackfriday]
   hrefTargetBlank = true
 
@@ -249,7 +249,21 @@ defaultContentLanguageInSubdir = true
 # Configure the English version of the website.
 [languages.en]
   languageCode = "en-us"
-  
+  role = "Ph.D. Student"
+  organization = "Linköping University"
+  phone = "+46 708 84 58 75"
+
+  publication_types = [
+    'Uncategorized',  # 0
+    'Conference proceedings',  # 1
+    'Journal',  # 2
+    'Work in progress',  # 3
+    'Technical report',  # 4
+    'Book',  # 5
+    'Book chapter'  # 6
+  ]
+ 
+# Swedish version  
 [languages.sv]
   languageCode = "sv"
   role = "Doktorand"

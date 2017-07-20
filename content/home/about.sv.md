@@ -32,5 +32,7 @@ weight = 1
 
 +++
 
-Richard Öhrvall är forskare vid Institutet för Näringslivsforskning (IFN) och doktorand i statsvetenskap vid Linköpings universitet. Hans forskningsintressen innefattar politiskt deltagande, social tillit och offentlig korruption. Hans forskning har blivit publicerad i tidskrifter som Acta Politica, Electoral Studies, Local Government Studies, och i flera böcker.
+Jag är doktorand i statsvetenskap vid Linköpings universitet, forskare vid Institutet för Näringslivsforskning (IFN) och affilierad till Institutet för analytisk sociologi. Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag för närvarande är tjänstledig från. De eventuella åsikter som framförs här är dock mina egna. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Jag är även intresserad av statistisk metod och visualisering av data.
+
+Den här bloggen är under utveckling. Min vanliga blogg går att nå via https://richardohrvall.com/. 
  
