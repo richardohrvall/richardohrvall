@@ -167,33 +167,67 @@ defaultContentLanguageInSubdir = false
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
-[[menu.main]]
+# English version
+
+[[languages.en.menu.main]]
   name = "Home"
   url = "#about"
   weight = 1
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Publications"
   url = "#publications_selected"
   weight = 2
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Posts"
   url = "#posts"
   weight = 3
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Projects"
   url = "#projects"
   weight = 4
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Teaching"
   url = "#teaching"
   weight = 5
 
-[[menu.main]]
+[[languages.en.menu.main]]
   name = "Contact"
+  url = "#contact"
+  weight = 6
+
+# Swedish version
+
+[[languages.sv.menu.main]]
+  name = "Start"
+  url = "#about"
+  weight = 1
+
+[[languages.sv.menu.main]]
+  name = "Publikationer"
+  url = "#publications_selected"
+  weight = 2
+
+[[languages.sv.menu.main]]
+  name = "Blogg"
+  url = "#posts"
+  weight = 3
+
+[[languages.sv.menu.main]]
+  name = "Projekt"
+  url = "#projects"
+  weight = 4
+
+[[languages.sv.menu.main]]
+  name = "Undervisning"
+  url = "#teaching"
+  weight = 5
+
+[[languages.sv.menu.main]]
+  name = "Kontakt"
   url = "#contact"
   weight = 6
 
@@ -209,3 +243,6 @@ defaultContentLanguageInSubdir = false
 # Configure the English version of the website.
 [languages.en]
   languageCode = "en-us"
+  
+[languages.sv]
+  languageCode = "sv"
