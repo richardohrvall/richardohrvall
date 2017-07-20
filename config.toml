@@ -24,8 +24,6 @@ defaultContentLanguageInSubdir = true
 
 [params]
   name = "Richard Öhrvall"
-  role = "Ph.D. student"
-  organization = "Linköping University"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait2.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
@@ -199,6 +197,11 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
+[languages.en.param]
+  role = "Ph.D. student"
+  organization = "Linköping University"
+
+
 # Swedish version
 
 [[languages.sv.menu.main]]
@@ -231,11 +234,17 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
+[languages.sv.param]
+  role = "Doktorand"
+  organization = "Linköpings universitet"
+
+
 # Taxonomies.
 [taxonomies]
   tag = "tags"
   category = "categories"
   publication_type = "publication_types"
+
 
 # Languages
 #   Create a [languages.X] block for each language you want, where X is the language ID.
@@ -246,4 +255,4 @@ defaultContentLanguageInSubdir = true
   
 [languages.sv]
   languageCode = "sv"
-  title = "Svenska"
+
