@@ -252,4 +252,16 @@ defaultContentLanguageInSubdir = true
   
 [languages.sv]
   languageCode = "sv"
-
+  role = "Doktorand"
+  Organization = "Linköpings universitet"
+  phone = "0708-84 58 75"
+  
+  publication_types = [
+    'Övrigt',  # 0
+    'Konferenspapper',  # 1
+    'Artiklar',  # 2
+    'Work in progress',  # 3
+    'Rapporter',  # 4
+    'Böcker',  # 5
+    'Bokkapitel'  # 6
+  ]
