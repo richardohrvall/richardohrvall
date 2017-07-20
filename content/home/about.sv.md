@@ -28,10 +28,9 @@ weight = 1
   institution = "Uppsala universitet"
   year = 2002
 
+# Removed the Heading below.
 
 +++
-
-# About me
 
 Richard Öhrvall är forskare vid Institutet för Näringslivsforskning (IFN) och doktorand i statsvetenskap vid Linköpings universitet. Hans forskningsintressen innefattar politiskt deltagande, social tillit och offentlig korruption. Hans forskning har blivit publicerad i tidskrifter som Acta Politica, Electoral Studies, Local Government Studies, och i flera böcker.
  

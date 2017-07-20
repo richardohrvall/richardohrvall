@@ -28,10 +28,10 @@ weight = 1
   institution = "Uppsala University"
   year = 2002
 
+# Removed the heading "About me" below
 
 +++
 
-# About me
 
 Richard Öhrvall is a researcher at the Research Institute of Industrial Economics (IFN) and a PhD candidate in political science at Linköping University. His research interests include political participation, social trust and public corruption. He has been published in journals such as Acta Politica, Electoral Studies, Local Government Studies, and in several books.
  
