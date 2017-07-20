@@ -6,7 +6,7 @@
 # Buttons
 
 - id: btn_details
-  translation: Details
+  translation: Detaljer
 
 - id: btn_pdf
   translation: PDF
@@ -18,62 +18,62 @@
   translation: Video
 
 - id: btn_code
-  translation: Code
+  translation: Kod
 
 - id: btn_dataset
   translation: Dataset
 
 - id: btn_project
-  translation: Project
+  translation: Projekt
 
 # About widget
 
 - id: interests
-  translation: Interests
+  translation: Intresen
 
 - id: education
-  translation: Education
+  translation: Utbildning
 
 # Publications widget
 
 - id: more_publications
-  translation: More Publications
+  translation: Fler publikationer
 
 # Posts widget
 
 - id: continue_reading
-  translation: CONTINUE READING
+  translation: FORTSÄTT LÄSA
 
 - id: more_posts
-  translation: More Posts
+  translation: Fler inlägg
 
 # Talks widget
 
 - id: more_talks
-  translation: More Talks
+  translation: Fler presentationer
 
 # Publication/Talk details
 
 - id: abstract
-  translation: Abstract
+  translation: Sammanfattning
 
 - id: publication
-  translation: Publication
+  translation: Publikation
 
 - id: publication_type
-  translation: Type
+  translation: Typ
 
 - id: date
-  translation: Date
+  translation: Datum
 
 - id: links
-  translation: Links
+  translation: Länk
 
 - id: event
-  translation: Event
+  translation: Tillställning
 
 - id: location
-  translation: Location
+  translation: Plats
 
 # Filtering
 
@@ -91,10 +91,10 @@
 # Default node titles
 
 - id: posts
-  translation: Posts
+  translation: Inlägg
 
 - id: publications
-  translation: Publications
+  translation: Publikationer
 
 - id: talks
-  translation: Talks
+  translation: Presentationer
