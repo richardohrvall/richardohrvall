@@ -78,15 +78,15 @@
 # Filtering
 
 - id: filter_by_type
-  translation: Filter by type
+  translation: Filtrera efter typ
 
 - id: filter_all
-  translation: All
+  translation: Alla
 
 # Project details
 
 - id: open_project_site
-  translation: Go to Project Site
+  translation: Gå till projektets sida
 
 # Default node titles
 

@@ -24,6 +24,8 @@ defaultContentLanguageInSubdir = true
 
 [params]
   name = "Richard Öhrvall"
+  role = "Ph.D. Student"
+  organization = "Linköping University"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait2.png"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
@@ -165,6 +167,8 @@ defaultContentLanguageInSubdir = true
 #     desired widget in your `content/home/` folder.
 #   The weight parameter defines the order that the links will appear in.
 
+
+
 # English version
 
 [[languages.en.menu.main]]
@@ -196,10 +200,6 @@ defaultContentLanguageInSubdir = true
   name = "Contact"
   url = "#contact"
   weight = 6
-
-[languages.en.param]
-  role = "Ph.D. student"
-  organization = "Linköping University"
 
 
 # Swedish version
@@ -234,9 +234,6 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
-[languages.sv.param]
-  role = "Doktorand"
-  organization = "Linköpings universitet"
 
 
 # Taxonomies.
