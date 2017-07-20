@@ -1,4 +1,4 @@
-baseurl = "https://richardohrvall.netlify.com/"  # End your URL with a `/` trailing slash.
+baseurl = "https://richardohrvall.rbind.io/"  # End your URL with a `/` trailing slash.
 title = "Richard Öhrvall"
 copyright = "&copy; 2017 Richard Öhrvall"
 theme = "hugo-academic"
@@ -45,7 +45,7 @@ defaultContentLanguageInSubdir = false
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.
-  math = false
+  math = true
 
   # Highlight.js options
   #   highlight
@@ -81,7 +81,7 @@ defaultContentLanguageInSubdir = false
   #   For more info on the highlighting options, see:
   #   https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/#highlighting-options
   highlight = true
-  highlight_languages = []
+  highlight_languages = ["r", "stata", "tex"]
   # highlight_style = "github"
   # highlight_version = "9.9.0"
 
@@ -156,6 +156,11 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "//github.com/richardohrvall"
+    
+  [[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "https://www.linkedin.com/in/richard-öhrvall-0a44983/"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
