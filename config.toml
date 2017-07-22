@@ -90,7 +90,7 @@ defaultContentLanguageInSubdir = true
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["custom.css"]
+  custom_css = []
   custom_js  = []
 
   # Publication types.
@@ -201,11 +201,6 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
-[[languages.en.menu.main]]
-  name = "På svenska"
-  url = "../sv"
-  weight = 7
-
 # Swedish version
 
 [[languages.sv.menu.main]]
@@ -237,11 +232,6 @@ defaultContentLanguageInSubdir = true
   name = "Kontakt"
   url = "#contact"
   weight = 6
-
-[[languages.sv.menu.main]]
-  name = "In English"
-  url = "../en"
-  weight = 7
 
 
 # Taxonomies.

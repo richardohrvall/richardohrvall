@@ -10,10 +10,10 @@ subtitle = ""
 widget = "publications"
 
 # Order that this section will appear in.
-weight = 20
+weight = 30
 
 # Number of publications to list.
-count = 10
+count = 5
 
 # Show publication details (such as abstract)? (true/false)
 detailed_list = false
