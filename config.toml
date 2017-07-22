@@ -177,13 +177,13 @@ defaultContentLanguageInSubdir = true
   weight = 1
 
 [[languages.en.menu.main]]
-  name = "Publications"
-  url = "#publications_selected"
+  name = "Posts"
+  url = "#posts"
   weight = 2
 
 [[languages.en.menu.main]]
-  name = "Posts"
-  url = "#posts"
+  name = "Publications"
+  url = "#publications_selected"
   weight = 3
 
 [[languages.en.menu.main]]
@@ -201,6 +201,10 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
+[[languages.en.menu.main]]
+  name = "På svenska"
+  url = "../sv"
+  weight = 7
 
 # Swedish version
 
@@ -210,13 +214,13 @@ defaultContentLanguageInSubdir = true
   weight = 1
 
 [[languages.sv.menu.main]]
-  name = "Publikationer"
-  url = "#publications_selected"
+  name = "Blogg"
+  url = "#posts"
   weight = 2
 
 [[languages.sv.menu.main]]
-  name = "Blogg"
-  url = "#posts"
+  name = "Publikationer"
+  url = "#publications_selected"
   weight = 3
 
 [[languages.sv.menu.main]]
@@ -234,6 +238,10 @@ defaultContentLanguageInSubdir = true
   url = "#contact"
   weight = 6
 
+[[languages.sv.menu.main]]
+  name = "In English"
+  url = "../en"
+  weight = 7
 
 
 # Taxonomies.
