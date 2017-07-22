@@ -254,9 +254,9 @@ defaultContentLanguageInSubdir = true
 
   publication_types = [
     'Uncategorized',  # 0
-    'Conference proceedings',  # 1
-    'Articles',  # 2
-    'Work in progress',  # 3
+    'Articles (peer review)',  # 1
+    'Other articles',  # 2
+    'Working papers',  # 3
     'Reports',  # 4
     'Books',  # 5
     'Book chapters'  # 6
@@ -271,9 +271,9 @@ defaultContentLanguageInSubdir = true
   
   publication_types = [
     'Övrigt',  # 0
-    'Konferenspapper',  # 1
-    'Artiklar',  # 2
-    'Work in progress',  # 3
+    'Artiklar (peer review)',  # 1
+    'Övriga artiklar',  # 2
+    'Working papers',  # 3
     'Rapporter',  # 4
     'Böcker',  # 5
     'Bokkapitel'  # 6
