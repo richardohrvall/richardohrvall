@@ -26,6 +26,25 @@
 - id: btn_project
   translation: Projekt
 
+# Extra customized buttons
+- id: btn_article
+  translation: Publicerad artikel
+  
+- id: btn_publisher
+  translation: Förlagets sida
+ 
+ - id: btn_preprint
+  translation: Pre-print version
+
+- id: btn_wp
+  translation: Working Paper
+  
+- id: btn_appendix
+  translation: Webb-appendix
+  
+- id: btn_github
+  translation: GitHub
+
 # About widget
 
 - id: interests
