@@ -1,7 +1,5 @@
 +++
-abstract = "Enligt så gott som alla internationella rankningslistor över korruption är Sverige bland de minst korrupta länderna i världen, med få avslöjade fall. Men innebär det att det svenska samhället inte alls är drabbat? Författarna till A Clean House? kastar med sin bok ljus över en ljusskygg verksamhet. Deras studie kombinerar aktuell forskning och egna empiriska undersökningar.
-
-Vad vet vi om korruption i Sverige, och vad kan sägas om utvecklingen över tid? Bokens författare, med bakgrund i samhällsvetenskap och ekonomi, visar hur länder som ses som okorrupta kan ha specifika problem som ej bör underskattas eller ignoreras. Detta är den första djupgående studien på engelska av korruption i ett lågkorrupt, utvecklat välfärdsland.Genom att peka på orsaker, händelseförlopp och konsekvenser av korruption i lågkorrupta länder identifierar författarna faktorer som saknas i internationella undersökningar av korruption. De föreslår konstruktiva reformer som kan motverka de typer av korruption som förekommer i ”hälsosamma” samhällen."
+abstract = "Enligt så gott som alla internationella rankningslistor över korruption är Sverige bland de minst korrupta länderna i världen, med få avslöjade fall. Men innebär det att det svenska samhället inte alls är drabbat? Författarna till A Clean House? kastar med sin bok ljus över en ljusskygg verksamhet. Deras studie kombinerar aktuell forskning och egna empiriska undersökningar. Vad vet vi om korruption i Sverige, och vad kan sägas om utvecklingen över tid?"
 authors = ["Andreas Bergh", "Gissur Ó Erlingsson", "Richard Öhrvall", "Mats Sjölin"]
 date = "2016-08-19"
 image_preview = ""
@@ -19,7 +17,7 @@ url_dataset = ""
 url_github = ""
 url_pdf = ""
 url_preprint = ""
-url_publisher  = "http://www.nordicacademicpress.com/bok/a-clean-house/"
+url_publisher = "http://www.nordicacademicpress.com/bok/a-clean-house/"
 url_project = ""
 url_slides = ""
 url_video = ""
@@ -29,7 +27,7 @@ url_wp = ""
 name = "Adlibris"
 url = "https://www.amazon.com/Clean-House-Studies-Corruption-Sweden/dp/9188168352"
 
-Optional featured image (relative to `static/img/` folder).
+# Optional featured image (relative to `static/img/` folder).
 [header]
 image = "publications/A-clean-house.jpg"
 # caption = "My caption :smile:"
