@@ -33,7 +33,7 @@
 - id: btn_publisher
   translation: Publisher's page
  
- - id: btn_preprint
+- id: btn_preprint
   translation: Pre-print version
 
 - id: btn_wp
