@@ -29,7 +29,7 @@ url = "https://www.amazon.com/Clean-House-Studies-Corruption-Sweden/dp/918816835
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "publications/A-clean-house.jpg"
+image = "publications/A_clean_house_wide.png"
 # caption = "My caption :smile:"
 
 

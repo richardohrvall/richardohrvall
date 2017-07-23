@@ -25,11 +25,11 @@ url_wp = ""
 
 [[url_custom]]
 name = "Adlibris"
-url = "https://www.amazon.com/Clean-House-Studies-Corruption-Sweden/dp/9188168352"
+url = "https://www.adlibris.com/se/bok/a-clean-house-studies-of-corruption-in-sweden-9789188168351"
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
-image = "publications/A-clean-house.jpg"
+image = "publications/A_clean_house_wide.png"
 # caption = "My caption :smile:"
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
