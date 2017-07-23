@@ -33,6 +33,6 @@ url_wp = "http://www.ifn.se/publikationer/working_papers/2012/938"
 # image = "headers/bubbles-wide.jpg"
 # caption = "My caption :smile:"
 
+# More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
 
-More detail can easily be written here using *Markdown* and $\rm \LaTeX$ math code.
