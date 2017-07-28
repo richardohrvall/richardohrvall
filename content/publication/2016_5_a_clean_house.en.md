@@ -1,6 +1,6 @@
 +++
 abstract = "According to virtually all international corruption rankings, Sweden is one of the top performing countries with very few exposed incidents of corruption. But does this automatically imply that it can be declared a perfectly ‘healthy patient’? By extensively reviewing existing research and adding empirical sets of data, the authors of A Clean House? shed light on shady corners of the Swedish case."
-authors = ["Andreas Bergh", "Gissur Ó Erlingsson", "Richard Öhrvall", "Mats Sjölin"]
+authors = ["Andreas Bergh", "Gissur Ó. Erlingsson", "Richard Öhrvall", "Mats Sjölin"]
 date = "2016-08-19"
 image_preview = ""
 math = true

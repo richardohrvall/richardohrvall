@@ -1,6 +1,6 @@
 +++
 abstract = "Enligt så gott som alla internationella rankningslistor över korruption är Sverige bland de minst korrupta länderna i världen, med få avslöjade fall. Men innebär det att det svenska samhället inte alls är drabbat? Författarna till A Clean House? kastar med sin bok ljus över en ljusskygg verksamhet. Deras studie kombinerar aktuell forskning och egna empiriska undersökningar. Vad vet vi om korruption i Sverige, och vad kan sägas om utvecklingen över tid?"
-authors = ["Andreas Bergh", "Gissur Ó Erlingsson", "Richard Öhrvall", "Mats Sjölin"]
+authors = ["Andreas Bergh", "Gissur Ó. Erlingsson", "Richard Öhrvall", "Mats Sjölin"]
 date = "2016-08-19"
 image_preview = ""
 math = true
