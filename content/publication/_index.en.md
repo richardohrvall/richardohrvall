@@ -10,4 +10,4 @@ image = ""
 caption = ""
 
 +++
-Only publications in English are presented here, for full list of publications see the Swedish version of the site.
+Only selected publications in English are presented here, for a more extensive list of publications see my CV or the Swedish version of the site.

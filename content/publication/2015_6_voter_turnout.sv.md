@@ -7,7 +7,7 @@ math = true
 publication_types = ["6"]
 publication = "Oxford University Press"
 publication_short = "Oxford University Press"
-selected = true
+selected = false
 title = "Voter Turnout"
 
 url_appendix = ""
