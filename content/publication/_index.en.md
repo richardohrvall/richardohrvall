@@ -10,3 +10,4 @@ image = ""
 caption = ""
 
 +++
+Only publications in English are presented here, for full list of publications see the Swedish version of the site.
