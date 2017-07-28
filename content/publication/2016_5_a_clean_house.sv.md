@@ -27,6 +27,11 @@ url_wp = ""
 name = "Adlibris"
 url = "https://www.adlibris.com/se/bok/a-clean-house-studies-of-corruption-in-sweden-9789188168351"
 
+[[url_custom]]
+name = "Bokus"
+url = "http://www.bokus.com/bok/9789188168351/a-clean-house-studies-of-corruption-in-sweden/"
+
+
 # Optional featured image (relative to `static/img/` folder).
 [header]
 image = "publications/A_clean_house_wide.png"

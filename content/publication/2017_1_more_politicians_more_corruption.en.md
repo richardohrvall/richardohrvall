@@ -5,8 +5,8 @@ date = "2017-05-25"
 image_preview = ""
 math = true
 publication_types = ["1"]
-publication = "In Public Choice"
-publication_short = "In Public Choice"
+publication = "Public Choice"
+publication_short = "Public Choice"
 selected = false
 title = "More politicians, more corruption: evidence from Swedish municipalities"
 
@@ -35,5 +35,5 @@ url_wp = "http://www.ifn.se/eng/publications/wp/2012/938"
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
-
+Please note that the published article is substantially revised compared to the working paper. 
 
