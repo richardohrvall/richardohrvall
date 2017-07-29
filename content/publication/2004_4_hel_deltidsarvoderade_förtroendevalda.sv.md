@@ -1,21 +1,21 @@
 +++
-abstract = "Den svenska valstatistiken har en lång historia. År 1872 publicerade SCB för första gången statistik över valresultat. Särskilda studier av valdeltagandet inleddes i och med redovisningen av 1911 års riksdagsval. Den senaste valdeltagandeundersökningen genomfördes i samband med 2011 års omval. I och med den undersökningen har alltså SCB studerat hur andelen röstade ser ut i olika grupper under hundra års tid."
+abstract = "Föreliggande rapport presenterar undersökningens resultat avseende hel- och deltidsarvoderade förtroendevalda. Datainsamling och analys har finansierats av Justitiedepartementet, Svenska Kommunförbundet och Landstingsförbundet."
 authors = ["Richard Öhrvall"]
-date = "2012-12-06"
+date = "2004-08-30"
 image_preview = ""
 math = true
-publication_types = ["5"]
+publication_types = ["4"]
 publication = "Statistiska centralbyrån"
 publication_short = "SCB"
 selected = false
-title = "Svenskt valdeltagande under hundra år"
+title = "Hel- och deltidsarvoderade förtroendevalda"
 
 url_appendix = ""
 url_article = ""
 url_code = ""
 url_dataset = ""
 url_github = ""
-url_pdf = "pdf/2012_ohrvall.pdf"
+url_pdf = "pdf/2004_ohrvall.pdf"
 url_preprint = ""
 url_publisher  = ""
 url_project = ""
@@ -35,3 +35,5 @@ url_wp = ""
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
+
+

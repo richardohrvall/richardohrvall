@@ -1,21 +1,21 @@
 +++
-abstract = "Den 15 maj 2011 genomfördes omval till landstingsfullmäktige i Västra Götaland och kommunfullmäktige i Örebro, nordöstra valkretsen. SCB har genomfört en särskild undersökning av valdeltagandet i dessa omval. I rapporten Valdeltagande vid omvalen 2011 redovisas analyser baserade på den undersökningen."
+abstract = "Den svenska valstatistiken har en lång historia. År 1872 publicerade SCB för första gången statistik över valresultat. Särskilda studier av valdeltagandet inleddes i och med redovisningen av 1911 års riksdagsval. Den senaste valdeltagandeundersökningen genomfördes i samband med 2011 års omval. I och med den undersökningen har alltså SCB studerat hur andelen röstade ser ut i olika grupper under hundra års tid."
 authors = ["Richard Öhrvall"]
-date = "2012-01-12"
+date = "2012-12-06"
 image_preview = ""
 math = true
-publication_types = ["5"]
+publication_types = ["4"]
 publication = "Statistiska centralbyrån"
 publication_short = "SCB"
 selected = false
-title = "Valdeltagande vid omvalen 2011"
+title = "Svenskt valdeltagande under hundra år"
 
 url_appendix = ""
 url_article = ""
 url_code = ""
 url_dataset = ""
 url_github = ""
-url_pdf = "pdf/2012b_ohrvall.pdf"
+url_pdf = "pdf/2012_ohrvall.pdf"
 url_preprint = ""
 url_publisher  = ""
 url_project = ""
