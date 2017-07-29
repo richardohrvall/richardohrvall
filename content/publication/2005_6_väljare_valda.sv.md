@@ -1,6 +1,5 @@
 +++
-abstract = "I både Norge och Sverige är valdeltagandet internationellt sett högt även om det sjunkit något de senaste valen. Det är emellertid olika i olika samhällsgrupper och skillnaderna tycks mer uttalade i Norge än i Sverige. En utjämning av könsfördelningen
-i parlamenten har pågått men synes nu ha planat ut i Norge. Båda ländernas politiska system har präglats av socialdemokratin som varit i regeringsställning merparten av efterkrigstiden."
+abstract = "I både Norge och Sverige är valdeltagandet internationellt sett högt även om det sjunkit något de senaste valen. Det är emellertid olika i olika samhällsgrupper och skillnaderna tycks mer uttalade i Norge än i Sverige. En utjämning av könsfördelningen i parlamenten har pågått men synes nu ha planat ut i Norge. Båda ländernas politiska system har präglats av socialdemokratin som varit i regeringsställning merparten av efterkrigstiden."
 authors = ["Mikaela Järnbert", "Staffan Sollander", "Richard Öhrvall"]
 date = "2005-04-01"
 image_preview = ""

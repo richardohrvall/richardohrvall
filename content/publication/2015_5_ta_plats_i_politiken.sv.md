@@ -1,6 +1,5 @@
 +++
-abstract = "Hur väl lyckas partierna rekrytera och behålla förtroendevalda och hur fungerar den svenska representativa demokratin på lokal nivå? För att få en fördjupad bild av dessa frågor har Sverige Kommuner och Landsting finansierat en forskningsrapport
-av statsvetarna Gissur Ó. Erlingsson, Mattias Fogelgren och Richard Öhrvall från Linköpings universitet."
+abstract = "Hur väl lyckas partierna rekrytera och behålla förtroendevalda och hur fungerar den svenska representativa demokratin på lokal nivå? För att få en fördjupad bild av dessa frågor har Sverige Kommuner och Landsting finansierat en forskningsrapport av statsvetarna Gissur Ó. Erlingsson, Mattias Fogelgren och Richard Öhrvall från Linköpings universitet."
 authors = ["Gissur Ó. Erlingsson", "Mattias Fogelgren", "Richard Öhrvall"]
 date = "2015-04-14"
 image_preview = ""

@@ -1,6 +1,5 @@
 +++
-abstract = "I rapporten Förtroendevalda i kommuner och landsting 2007 redovisas analyser baserade på den totalundersökning om de
-förtroendevalda som Statistiska centralbyrån (SCB) genomförde under sommaren och hösten 2007. Rapporten belyser bland annat hur antalet förtroendevalda och förtroendeuppdrag förändrats över tid, vilka de förtroendevalda är och hur representativa de är för befolkningen i sin helhet. Dessutom innefattar rapporten en analys av vilka som väljer att hoppa av sitt uppdrag i förtid. Analyserna är genomförda av Jessica Persson och Richard Öhrvall vid SCB:s enhet för demokratistatistik."
+abstract = "I rapporten Förtroendevalda i kommuner och landsting 2007 redovisas analyser baserade på den totalundersökning om de förtroendevalda som Statistiska centralbyrån (SCB) genomförde under sommaren och hösten 2007. Rapporten belyser bland annat hur antalet förtroendevalda och förtroendeuppdrag förändrats över tid, vilka de förtroendevalda är och hur representativa de är för befolkningen i sin helhet. Dessutom innefattar rapporten en analys av vilka som väljer att hoppa av sitt uppdrag i förtid. Analyserna är genomförda av Jessica Persson och Richard Öhrvall vid SCB:s enhet för demokratistatistik."
 authors = ["Jessica Persson", "Richard Öhrvall"]
 date = "2008-05-20"
 image_preview = ""

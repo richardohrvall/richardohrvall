@@ -1,6 +1,5 @@
 +++
-abstract = "Kapitlet syftar till att undersöka invandrades valdeltagande med hjälp av ett större datamaterial. Av speciellt intresse
-är att studera om skillnaderna i valdeltagande mellan invandrade och infödda kvarstår då hänsyn tas till om personerna är svenska medborgare eller inte. För att göra sådana analyser kommer framför allt olika statistiska modeller att användas. Kapitlet syftar även till att gå ett steg vidare och undersöka valdeltagandet bland de invandrades barn. Om de i likhet med sina föräldrar röstar i lägre grad är det politiska deltagandet i Sverige än mindre jämlikt."
+abstract = "Kapitlet syftar till att undersöka invandrades valdeltagande med hjälp av ett större datamaterial. Av speciellt intresse är att studera om skillnaderna i valdeltagande mellan invandrade och infödda kvarstår då hänsyn tas till om personerna är svenska medborgare eller inte. För att göra sådana analyser kommer framför allt olika statistiska modeller att användas. Kapitlet syftar även till att gå ett steg vidare och undersöka valdeltagandet bland de invandrades barn. Om de i likhet med sina föräldrar röstar i lägre grad är det politiska deltagandet i Sverige än mindre jämlikt."
 authors = ["Richard Öhrvall"]
 date = "2006-09-28"
 image_preview = ""

@@ -1,6 +1,5 @@
 +++
-abstract = "Syftet med den här rapporten är att utifrån den deliberativa demokratiteorin fastställa ett antal grundläggande kriterier för att med hjälp av dessa analysera de diskussioner som förs i de kommunala hemsidornas debattforum. Avsikten är att på så vis avgöra om dessa diskussioner är av den karaktären att de kan ge de positiva effekter som teorin antar. Huruvida det finns något empiriskt stöd för att diskussion verkligen leder till bättre kollektiva beslut kommer dock inte att undersökas i den här rapporten. Vidare kommer jag att beröra några av de faror som också nämnts i samband med dessa tekniska lösningar och undersöka
-om jag kan finna något stöd för dessa farhågor."
+abstract = "Syftet med den här rapporten är att utifrån den deliberativa demokratiteorin fastställa ett antal grundläggande kriterier för att med hjälp av dessa analysera de diskussioner som förs i de kommunala hemsidornas debattforum. Avsikten är att på så vis avgöra om dessa diskussioner är av den karaktären att de kan ge de positiva effekter som teorin antar. Huruvida det finns något empiriskt stöd för att diskussion verkligen leder till bättre kollektiva beslut kommer dock inte att undersökas i den här rapporten. Vidare kommer jag att beröra några av de faror som också nämnts i samband med dessa tekniska lösningar och undersöka om jag kan finna något stöd för dessa farhågor."
 authors = ["Richard Öhrvall"]
 date = "2002-02-01"
 image_preview = ""

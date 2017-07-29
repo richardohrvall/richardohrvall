@@ -1,7 +1,5 @@
 +++
-abstract = "Den svenska valstatistiken har en lång historia. År 1872 publicerade SCB för första gången statistik över
-valresultat. Särskilda studier av valdeltagandet inleddes i och med redovisningen av 1911 års riksdagsval. Den
-senaste valdeltagandeundersökningen genomfördes i samband med 2011 års omval. I och med den undersökningen har alltså SCB studerat hur andelen röstade ser ut i olika grupper under hundra års tid."
+abstract = "Den svenska valstatistiken har en lång historia. År 1872 publicerade SCB för första gången statistik över valresultat. Särskilda studier av valdeltagandet inleddes i och med redovisningen av 1911 års riksdagsval. Den senaste valdeltagandeundersökningen genomfördes i samband med 2011 års omval. I och med den undersökningen har alltså SCB studerat hur andelen röstade ser ut i olika grupper under hundra års tid."
 authors = ["Richard Öhrvall"]
 date = "2012-12-06"
 image_preview = ""
