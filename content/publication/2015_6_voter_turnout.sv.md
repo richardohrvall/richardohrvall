@@ -40,5 +40,5 @@ url = "https://www.adlibris.com/se/bok/the-oxford-handbook-of-swedish-politics-9
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
-Kapitel i Jon Pierre (red.) *Oxford Handbook of Swedish Politics*. Oxford: Oxford University Press, pp. 229-245.
+Kapitel i Jon Pierre (red.) *Oxford Handbook of Swedish Politics*. Oxford: Oxford University Press, sid. 229-245.
 
