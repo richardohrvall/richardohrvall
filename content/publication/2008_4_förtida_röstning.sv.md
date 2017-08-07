@@ -8,7 +8,7 @@ publication_types = ["4"]
 publication = "Göteborgs universitet"
 publication_short = "Göteborgs universitet"
 selected = false
-title = "Förtida röstning i SVerige"
+title = "Förtida röstning i Sverige"
 
 url_appendix = ""
 url_article = ""
