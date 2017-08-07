@@ -12,7 +12,7 @@ disqusShortname = "richardohrvall-netlify-com-1"
 googleAnalytics = "UA-102816976-1"
 
 # Default language to use (if you setup multilingual support)
-defaultContentLanguage = "en"
+defaultContentLanguage = "sv"
 defaultContentLanguageInSubdir = true
 
 # Set permalinks
