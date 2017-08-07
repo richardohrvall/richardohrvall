@@ -32,7 +32,7 @@ weight = 1
 
 +++
 
-Jag är doktorand i statsvetenskap vid Linköpings universitet, forskare vid Institutet för Näringslivsforskning (IFN) och affilierad till Institutet för analytisk sociologi. Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag för närvarande är tjänstledig från. De eventuella åsikter som framförs här är dock mina egna. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Jag är även intresserad av statistisk metod och visualisering av data.
+Jag är doktorand i statsvetenskap vid Linköpings universitet, forskare vid Institutet för Näringslivsforskning (IFN) och affilierad till Institutet för analytisk sociologi. Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag för närvarande är tjänstledig från. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Jag är även intresserad av statistisk metod och visualisering av data.
 
 Den här bloggen är under utveckling. Min vanliga blogg går att nå via https://richardohrvall.com/. 
  
