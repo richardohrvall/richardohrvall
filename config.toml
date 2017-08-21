@@ -5,6 +5,10 @@ theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
+# Added as suggested 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+
 # Enable comments by entering your Disqus shortname
 disqusShortname = "richardohrvall-netlify-com-1"
 

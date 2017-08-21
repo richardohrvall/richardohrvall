@@ -6,7 +6,7 @@ date = "2017-07-22"
 title = "Growing into voting"
 
 # Project summary to display on homepage.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+summary = "My doctoral thesis tackles the question of turnout among young people. It will have the form of a compilation thesis, a compilation of four articles. All four articles will use information on voter turnout from electoral rolls in combination with register data."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "ragsved.jpg"
@@ -28,7 +28,6 @@ image = "headers/ragsved_wide.jpg"
 
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+My doctoral thesis tackles the question of turnout among young people. More specifically, the focus is on the first few elections a young person encounters and how different circumstances can affect the probability of voting in the first and subsequent elections. Some research results indicate that these early elections are of importance for whether an individual forms a habit of voting or abstaining. Still, the research field is fairly new and the results are not all pointing in the same direction. My analyses of Swedish, high-quality data will hopefully contribute to a better understanding of the mechanisms behind the decision to vote or not.
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
-
+The doctoral thesis will have the form of a compilation thesis, a compilation of four articles and with a unifying introduction that sets out the framework and puts the dissertation in an international academic context. All four articles will use information on voter turnout from electoral rolls in combination with register data. Thereby problems with over-reporting of turnout that previous research has shown is a problem in surveys, is avoided. Furthermore, since all the variables used in the analyses are retrieved from register data, voter turnout can be estimated using the full sample without any nonresponse.

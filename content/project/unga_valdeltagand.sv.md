@@ -6,7 +6,7 @@ date = "2017-07-22"
 title = "Ungas valdeltagande"
 
 # Project summary to display on homepage.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+summary = "Mitt avhandlingsprojekt handlar om ungas valdeltagande. Det kommer att mynna ut i en sammanläggningsavhandling, där fyra artiklar som behandlar valdeltagande bland unga kommer att ingå. Samtliga artiklar nyttjar uppgifter om valdeltagande från röstängder i kombination med registerdata."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "ragsved.jpg"
@@ -27,8 +27,7 @@ image = "headers/ragsved_wide.jpg"
 # caption = "My caption :smile:"
 
 +++
+Mitt avhandlingsprojekt handlar om ungas valdeltagande. Mer specifikt ligger fokus på de första valen som unga personer har tillfälle att rösta i och hur olika omständigheter kan påverka sannolikheten att rösta i det första och de följande valen. Det finns en del forskning vars resultat tyder på att dessa tidiga val har betydelse för om en individ formar en vana att rösta eller inte. Samtidigt är forskningsfätet nytt och resultaten ingalunda entydiga. Förhoppningsvis kan mina analyser av svenska, högkvalitativa data bidrar till bättre förståelse av de mekanismer som ligger bakom beslutet att rösta eller inte rösta.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+Avsikten är att avhandlingsprojektet ska mynna ut i en sammanläggningsavhandling bestående av fyra artiklar. Samtliga fyra artiklar nyttjar uppgifter om valdeltagande från röstängder, i kombination med registerdata. Den ansatsen gör att de problem som finns förknippade med att fråga person om deras valdeltagande i surveyundersökningar undviks. En ytterligare fördel är att datamaterialet inte har något bortfall, vilket ofta är ett problem i surveyundersökningar i dag.
 
