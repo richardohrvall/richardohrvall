@@ -33,6 +33,6 @@ weight = 1
 +++
 
 
-I am a PhD candidate in political science at Linköping University, a researcher at the Research Institute of Industrial Economics (IFN), and affiliated to The Institute of Analytical Sociology. I am also currently on leave from Statistics Sweden. My research interests include political participation, social trust and public corruption. Statistical methods and visualization of data are also among my interests. I have experience of working wits SAS, Python and SPSS, but I primarily use Stata and R.
+I am a PhD candidate in political science at Linköping University, a researcher at the Research Institute of Industrial Economics (IFN), and affiliated to The Institute of Analytical Sociology. I am also currently on leave from Statistics Sweden. My research interests include political participation, social trust and public corruption. Statistical methods and visualization of data are also among my interests. I have experience of using SAS, Python and SPSS, but I primarily use Stata and R.
 
  
