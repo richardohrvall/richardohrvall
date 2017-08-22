@@ -6,7 +6,7 @@ date = "2017-07-22"
 title = "New in politics"
 
 # Project summary to display on homepage.
-summary = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+summary = "New in politics is a research project with the purpose of studying expectations and experiences among local politicians. The analyses are based on a panel survey targeting a sample of those who ran for office in the 2014 Swedish municipal elections. This sample will be followed through the political term 2014-2018."
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "inkorsport.jpg"
