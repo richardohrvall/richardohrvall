@@ -1,0 +1,21 @@
+---
+title: Fotboll och statistik
+author: Richard Öhrvall
+date: '2012-06-07'
+categories:
+  - sport
+  - statistik
+slug: fotboll-och-statistik
+---
+
+På fredag inleds 2012 års EM i fotboll. Med det kommer spekulationer kring laguttagningar, matchresultat och den avgörande frågan - vilket land kommer att vinna turneringen? En naturlig utgångspunkt är att studera länders och spelares tidigare prestationer, dvs. analysera statistiken. Kopplingen mellan statistik och idrott fick stor uppmärksamhet i och med förra årets film [Moneyball ](http://www.imdb.com/title/tt1210166/)med Brad Pitt i rollen som Billy Beane, en general manager i baseball som inser att statistik kan användas för att hitta undervärderade spelare. Historien bygger på en verklig händelse (och även på en bok med samma namn av Michael Lewis) och metoden att använda statistik för att analysera spelare, så kallad _sabermetrics_, används numera av alla stora baseballklubbar. Det innebar en stor förändring. I filmen ges exempel på hur klubbarna tidigare kunde utvärdera unga talanger med omdömen som: "He's got an ugly girlfriend. Ugly girlfriend means no confidence."
+
+Även inom fotbollen har statistiken fått en allt större betydelse. I [en väldigt intressant artikel i Financial Times](http://www.ft.com/cms/s/2/9471db52-97bb-11e0-9c37-00144feab49a.html#axzz1x1rYUu3b) förra året beskrivs den utvecklingen. När årets engelska mästare, Manchester City, år 2008 köptes av ett investmentbolag i Abu Dhabi (med kopplingar till den kungliga familjen) var en av de första åtgärderna att anställa ett stort antal dataanalytiker. Andra storklubbar låg då redan långt före. Arsenals manager Arsene Wenger är en stor tillskyndare av statistik (vilket i och för sig är en klen tröst då laget trots detta inte vunnit en titel på sju år). Som beskrivs i artikeln var en milstolpe då 1996 börjades samla in mer data från engelska fotbollsmatcher. För att kunna göra effektiva analyser krävs bra data. Men det krävs också att man vet vilka mått man ska studera. Enligt uppgifter berodde Alex Fergusons försäljning av försvararen Jaap Stam 2001 på en misstolkning av statistiken. Ett annat exempel på hur svårt det kan vara är Liverpools köp av Andy Carroll, som tydligen ska vara baserat på statistisk analys (känner mig personligen rätt tveksam till den slutsatsen).
+
+Som på så många andra områden börjar mängden data även kring fotboll bli så pass omfattande att det gäller att välja vilka mått som är av vikt (vilket också är det roliga med dataanalys). Analyser har visat att de mått som man intuitivt kan tänka sig vara viktiga, som löpsträcka under match, antal tacklingar, osv., inte är speciellt bra variabler att slänga in i modeller för att bedöma spelare och lag. Istället är sådant som antal löpningar i hög hastighet och passningar till rätt adress (i synnerhet sådana passningar framåt) bättre predikatorer (se även [den här artikeln](http://www.bbc.co.uk/blogs/thefootballtacticsblog/2011/11/how_statistics_shaped_a_hollyw.html)). Man kan vara säker på att det pågår mycket forskning på området, men då det innebär stora ekonomiska och sportsliga fördelar är det inte säkert eller ens troligt att alla framsteg blir offentliga, även om det finns undantag (se t.ex. den här [vetenskapliga artikeln](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0010937)).
+
+Om ni själva vill göra lite analyser inför fotbolls-EM kan ni använda de dataset som statsvetaren [Anders Sundell](http://www.pol.gu.se/personal/doktorander/sundell--anders/) satt samman i olika format: [Excel](http://www.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fopen%3Fid%3D0BwlOaRf5Tm4Gc2wwUHhrQnVJWjQ&h=YAQHIfOeE), [Stata ](http://www.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fopen%3Fid%3D0BwlOaRf5Tm4GUGNzQ2FvN2stdmc&h=5AQHeDjbr)och [SPSS](http://www.facebook.com/l.php?u=https%3A%2F%2Fdocs.google.com%2Fopen%3Fid%3D0BwlOaRf5Tm4GR1RaOE1mU2JsOGs&h=xAQHuLpPs). Där finns en del grundläggande data kring de spelare som deltar i EM. Bland annat kan man se att Sverige i alla fall vinner vad gäller medellängd.
+
+![](/img/wp/längd.png)
+
+Andra har satt samman andra dataset med mer information, t.ex. från spelet Football Manager, så om ni söker runt kan ni hitta mer data, eller varför inte samla in själva under mästerskapet?
