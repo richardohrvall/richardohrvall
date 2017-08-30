@@ -34,5 +34,6 @@ weight = 1
 
 Jag är doktorand i statsvetenskap vid Linköpings universitet, forskare vid Institutet för Näringslivsforskning (IFN) och affilierad till Institutet för analytisk sociologi. Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag för närvarande är tjänstledig från. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Statistisk metod och visualisering av data tillhör också mina intressen. Jag har erfarenhet av att arbeta med SAS, Python och SPSS, men jag använder framför allt Stata och R.
 
-Den här bloggen är under utveckling och jag försöker flytta över gammalt material, men min gamla blogg går fortfarande att nå via https://richardohrvall.com/. 
- 
+Mitt CV hittar du [här](/cv/cv_richard_ohrvall_sv.pdf).
+
+Min gamla blogg uppdateras inte längre, men går fortfarande att nå via https://richardohrvall.com/. 
