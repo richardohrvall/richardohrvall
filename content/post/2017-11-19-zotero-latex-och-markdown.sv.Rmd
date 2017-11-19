@@ -1,0 +1,38 @@
+---
+title: Zotero, Latex och Markdown
+author: Richard Öhrvall
+date: '2017-11-20'
+slug: zotero-latex-och-markdown
+categories:
+  - Zotero
+  - workflow
+  - Latex
+tags: []
+---
+Jag har tidigare skrivit ett antal bloggposter om hur man kommer igång med referenshanteringsprogrammet Zotero och hur det kan användas (du hittar dem [här](https://richardohrvall.rbind.io/sv/categories/zotero/)). Efter att ha nyttjat programmet en tid har jag kommit att uppskatta det allt mer. Numera använder jag det för att hålla koll på allehanda referenser och dokument, inte bara de av akademiskt slag.
+
+Nyligen kom en ny version av Zotero -- version 5. Det är en stor uppdatering i förhållande till tidigare versioner. Det går inte längre att använda Zotero som enbart ett program i webbläsaren Firefox, utan alla användare måste numera installera och använda det självständiga programmet. Däremot går det fortfarande att använda tilläggsprogram för Firefox, Chrome och Safari för att hämta in referenser från internet. För mig gör det ingen skillnad då jag redan tidigare använde det självständiga programmet tillsammans med tillägget i Googles webbläsare Chrome.
+
+Förändringarna innebär även att man måste lägga till en ny versioner av det användbara tillägget Zotfile till Zotero. För information om vad Zotfile används till, se [tidigare blogginlägg](https://richardohrvall.rbind.io/sv/2016/07/01/kombinera-zotero-med-dropbox/). Detta gäller även tillägget BetterBibTeX, som används för att få in referenser om man använder LaTeX för att skriva dokument. LaTeX, eller $\LaTeX$ som de vill att man skriver, är ett typsättningsprogram är populärt inom akademin, i synnerhet inom naturvetenskapliga ämnen då det gör det enklare att skriva formler. Men även inom samhällsvetenskap har det blivit allt populärare då det har en tydlig struktur och de resulterande dokumenten blir snyggare än vad de blir i exempelvis Microsoft Word.
+
+Det finns olika så kallade distributioner av LaTeX och olika editorer att skriva i, lite beroende på vilket operativsystem man använder. Själv använder jag Windows 10 och jag har valt distributionen från [MiKTeX](https://miktex.org/) och [TeXstudio](https://www.texstudio.org/) som editor. Jag är själv förtjust i TeXstudio, men det finns många andra alternativ, bland annat en del webbaserade som t.ex. [ShareLaTeX](https://www.sharelatex.com/). Om man vill använda något som mer liknar en konventionell ordbehandlare kan [LyX](https://www.lyx.org/) vara ett alternativ.
+
+Om man letar lite på nätet finns mängder av guider till LaTeX, så i det här blogginlägget tänkte jag bara tipsa om hur man kan använda Zotero för att få in referenser. Det gör man enklast med hjälp av nämnda tillägget till Zotero, BetterBibTeX. Det går att ladda ned [här](https://github.com/retorquere/zotero-better-bibtex). Därefter kan man i menyn Arkiv välja Exportera bibliotek för att få ut alla referenser som man har i Zotero till en så kallad bib-fil. En sådan filen används sedan för att lägga in referenser i LaTeX. Vid exporteringen går det att välja mellan "Better BibLaTeX" och "Better BibTeX", vilket påverkar utformningen av bib-filen. Vad man bör välja beror på vad man sedan använder i LaTeX (se t.ex. [här](https://tex.stackexchange.com/questions/25701/bibtex-vs-biber-and-biblatex-vs-natbib) för en beskrivning av skillnaderna). Om man bockar i rutan "Keep updated" så uppdateras bib-filen så fort en ny källa läggs till i Zotero.
+
+Om man på så vis exporterar alla referenser från Zotero kan man hänvisa till den bib-filen i artiklar och andra dokument. Fast jag föredrar att skapa en specifik bib-fil för varje text. Fördelarna med det är dels att man kan lägga bib-filen i samma mapp som dokumentet, som man då kan dela med andra författare, dels att man efter att man är klar kan stänga av att filen ska uppdateras om något ändras i Zotero, så att man inte riskerar att någon referens tas bort av misstag.
+
+Enklast gör man detta genom att skapa en "Ny samling" i Zotero, och dra dit alla referenser som man vill ha med i texten (varje referens kan finnas i fler än en samling, så det påverkar inte andra samlingar du redan har skapat). Sedan kan man högerklicka på den samlingen och välja "Exportera samling", och sedan på motsvarande sätt som tidigare välja BibTeX eller BibLaTex, och var filen ska läggas (förslagsvis i samma mapp som du har det dokument du skriver på). Om man dessutom bockar i rutan "Keep updated" kan man lägga in nya referenser i samlingen i Zotero och bib-filen uppdateras automatiskt. När man är säker på att man är färdig med dokumentet kan man koppla ifrån uppdateringen via Redigera/Inställningar/Better BibTeX och under fliken Automatic Export.
+![](/img/posts/Zotero_export.png)
+Olika editorer hanterar sedan referenser på olika sätt, men om man i TeXstudio anger var bib-filen finns kommer förslag på referenser upp från den när man börjar skriva ett kommando som används för att lägga in en referens, som t.ex. via `\parencite`.
+![](/img/posts/cite_texstudio.png)
+Om man istället skriver en text i RMarkdown kan man på motsvarande sätt koppla till en bib-fil genom att hänvisa till den i början av dokumentet (i den del som innehåller metadata i YAML), exempelvis på följande sätt.
+```{r eval=FALSE}
+---
+title: "Sample Document"
+output: pdf_document
+bibliography: bibliography.bib
+---
+
+```
+Alternativt kan man använda R-paketet [`citr`](https://cran.r-project.org/web/packages/citr/index.html), som hämtar referenser direkt från Zotero via en add-in i RStudio. Den skapar sedan en lokal bib-fil. En nackdel är att den filen inte automatiskt uppdateras om man uppdaterar en referens i Zotero. Det är möjligt att det kommer i en senare uppdatering av paketet, men i dagsläget är det en brist med att välja det sättet.
+
