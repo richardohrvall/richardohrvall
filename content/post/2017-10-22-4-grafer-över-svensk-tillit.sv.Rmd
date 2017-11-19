@@ -1,0 +1,188 @@
+---
+title: 4 grafer över svensk tillit
+author: Richard Öhrvall
+date: '2017-10-31'
+slug: 4-grafer-över-svensk-tillit
+categories:
+  - R
+  - Visualisering av data
+  - tillit
+  - data
+tags: []
+---
+*Det här inlägget har även publicerats på forskarbloggen [Politologerna](https://politologerna.wordpress.com/2017/10/31/fyra-grafer-over-svensk-tillit/)*
+
+"Två fakta gifva förnämligast det svenska folklynnet sin karaktär i våra dagar. Det ena är, att vi svenskar älska och intressera oss för naturen men icke för människor. Det andra: att vi sakna nationalkänsla." Detta konstaterade Gustav Sundbärg 1911 i boken *Det svenska folklynnet* (som tillgängliggjorts via beundransvärda [Projekt Runeberg](http://runeberg.org/folklynn/)). I dag är debatten om svensken och det svenska ånyo aktuell. En debatt som skulle främjas av tydligare definitioner och en grund av empiri. I alla fall när det gäller det senare har vi i dag bättre förutsättningar än vad Sundbärg hade. En av de bästa datakällorna för att följa svenska folkets värderingar och attityder i olika samhällsfrågor är SOM-institutets årliga enkätundersökningar, som har genomförts sedan 1986. Men ibland kan vi bättre förstå oss själva genom att jämföra oss med andra. Så gjorde en gång Herbert Tingsten och fann att i alla de länder han jämförde uppfattades den egna nationalkaraktären som unik, fast den beskrevs på samma sätt (se [Olof Peterssons kommentar till den svenska statsindividualismen](http://www.olofpetersson.se/_arkiv/skrifter/timbro120925.pdf).
+
+För den som vill ställa den svenska situationen i relation till hur det ser ut i andra länder finns alternativ i form av olika internationella undersökningar, såsom [World Values Survey](http://www.worldvaluessurvey.org/wvs.jsp) och [International Social Survey Programme](http://www.issp.org/menu-top/home/). Om man nöjer sig med jämförelser inom Europa är en av de bästa datakällorna European Social Survey (ESS), som genomförts vartannat år sedan 2002. Undersökningen baseras på besöksintervjuer i ett tjugotal europeiska länder och urvalen är jämförelsevis stora. I varje omgång ingår två roterande moduler med frågor, men undersökningen innefattar även en stor uppsättning frågor som ställs i alla omgångar. Jag har själv hållit i den svenska datainsamlingen för en omgång av ESS, så jag vet vilka utförliga kontroller som görs av datamaterialet. Detta tillsammans med en utförlig dokumentation gör ESS till en utmärkt datakälla.
+
+I morse gjordes 2016 års omgång av ESS tillgänglig. För den som är intresserad av samhällsfrågor är det spännande: svar från 34 837 personer i 18 länder ger ett datamaterial bestående av 499 variabler. Precis som för övriga omgångar kan datamaterialet fritt laddas ned via  [ESS webbplats](http://www.europeansocialsurvey.org/). Därmed finns nya data för att besvara en lång rad intressanta frågeställningar. De två roterande moduler som ingår 2016 avser välfärdsattityder, som även var med 2008, och attityder till klimatförändringar, som är med för första gången. För att ge ett litet smakprov av vad undersökningen har att bjuda på har jag tagit fram fyra grafer som illustrerar mellanmänsklig tillit i Sverige och andra europeiska länder.
+
+Hur mycket vi litar på varandra i ett samhälle har visat sig hänga samman med en lång rad positiva utfall. I ESS mäts den mellanmänskliga tilliten med tre olika frågor. Av dessa tre frågor brukar framför allt en lyftas fram och den lyder ”Skulle du säga att man i allmänhet kan lita på de flesa människor eller att man inte kan vara nog försiktig när man har att göra med andra människor?”. Frågan besvaras med hjälp av en skala från noll till tio, där noll motsvarar ”man kan inte vara nog försiktig” och tio ”man kan lita på de flesta människor”. I 2016 års ESS-undersökning uppgår den mellanmänskliga tilliten i Sverige, mätt på detta sätt, till i genomsnitt 6,2. I SOM-institutets undersökningar ställs en motsvarande fråga. Även om frågeformuleringen är lite annorlunda i SOM är resultatet ganska likt – i 2016 års undersökning uppgick den genomsnittliga tilliten till 6,5 på en liknande skala från 0 till 10.
+
+Frågan om mellanmänsklig tillit hör de frågor som ställs i varje omgång av ESS. Det går därför att jämföra resultaten för Sverige över tid och med andra länder. I förhållande till förra undersökningen 2014 är den genomsnittliga tilliten på samma nivå. Även om det har varit händelserika år är två år en kort tid och det är är rimligt att anta att tillit förändras gradvis över tid. I Figur 1 illustreras den genomsnittliga mellanmänskliga tilliten i Sverige och andra europeiska länder har förändrats mellan 2006 och 2016. Det är 15 länder som ingick båda dessa år och bland dem har Norge högst och Polen lägst tillit. Sverige finns på tredje plats. Jämfört med 2006 finns ingen statistiskt signifikant förändring av den genomsnittliga tilliten i Sverige. Danmark som brukar ligga i topp i mätningar av det här slaget var inte med i ESS 2016.
+
+
+```{r graph_2006_2016, echo=FALSE, message=FALSE, cache=TRUE, fig.width=11, fig.height=7}
+library(extrafont)
+library(tidyverse)
+library(haven)
+library(ggplot2)
+library(ggalt)
+library(hrbrthemes)
+library(ggthemes)
+library(viridis)
+library(ggridges)
+library(gghighlight)
+
+# Get data ----------------------------------------------------------------
+ess_datafiles <- read_rds("C:/Dropbox/data/ESS/ess_datafiles.rds")
+cn_names <- read_dta("C:/Dropbox/data/ESS/cntry_code.dta")
+attr(cn_names$cntry, "format.stata") <- NULL
+attr(cn_names$cntry, "label") <- NULL
+
+# Use dweight since pspwght is not available for 2016
+summarize_dta <- . %>%
+    read_dta() %>% 
+    select(cntry, dweight, ppltrst, trstplt, pplfair, pplhlp ) %>% 
+    mutate(ppltrst = replace(ppltrst, ppltrst>10, NA),
+           pplhlp = replace(pplhlp, pplhlp>10, NA),
+           pplfair = replace(pplfair, pplfair>10, NA),
+           trstplt = replace(trstplt, trstplt>10, NA)) %>% 
+    group_by(cntry) %>% 
+    summarize(ppltrst = weighted.mean(ppltrst, dweight, na.rm = TRUE),  
+              pplfair = weighted.mean(pplfair, dweight, na.rm = TRUE), 
+              pplhlp = weighted.mean(pplhlp, dweight, na.rm = TRUE),
+              trstplt = weighted.mean(trstplt, dweight, na.rm = TRUE)) 
+
+ess_trust <- ess_datafiles %>% 
+    mutate(data = map(file_name, summarize_dta)) %>%
+    unnest() %>% 
+    select(-file_name) %>% 
+    left_join(cn_names, by = "cntry") 
+
+# Create a wide version of the data frame
+ess_trust_wide <- ess_trust %>% 
+    select(-pplhlp, -pplfair, -trstplt) %>% 
+    mutate(year=paste('y', year, sep="_")) %>% 
+    spread(year, ppltrst) %>% 
+    drop_na(y_2006, y_2016) %>%
+    arrange(desc(y_2016))
+
+#### Comparison 2006 vs 2016
+ess_trust_wide %>%
+    ggplot(aes(reorder(landsnamn, y_2016), x=y_2006, xend=y_2016)) +
+    scale_y_discrete(expand=c(0.075,0)) +
+    geom_dumbbell(size=3, color="#e3e2e1", 
+                  colour_x = "#bad744", colour_xend = "#5b8124",
+                  dot_guide=TRUE, dot_guide_size=0.25) +
+    labs(x=NULL, y=NULL, title="1. Förändring i mellanmänsklig tillit 2006 jämfört med 2016", 
+         subtitle="Fråga: 'Skulle du säga att man i allmänhet kan lita på de flesta människor eller\natt man inte kan vara nog försiktig när man har att göra med andra människor?'\n0=man kan inte vara nog försiktig, 10=man kan lita på de flesta människor.",
+         caption="Källa: European Social Survey (ESS), av @richardohrvall, 2017") +
+    geom_text(data=filter(ess_trust_wide, landsnamn=="Norge"),
+              aes(x=y_2016, y=landsnamn, label="2016"),
+              color="#5b8124", size=2.8, vjust=-1, hjust=1.2, fontface="bold", family="Calibri") +
+    geom_text(data=filter(ess_trust_wide, landsnamn=="Norge"),
+              aes(x=y_2006, y=landsnamn, label="2006"),
+              color="#bad744", size=2.8, vjust=-1, hjust=-0.2, fontface="bold", family="Calibri") +
+    theme_ipsum_rc(grid="X") +
+    theme(plot.subtitle=element_text(size=10)) +
+    theme(panel.grid.major.x=element_line(size=0.05))
+
+```
+
+I Figur 2 illustreras mellanmänsklig tillit för alla länder som har varit med någon gång i ESS och för alla år. Då figuren annars skulle bli lite väl plottrig har jag valt att endast tydliggöra de länder som har högst respektive lägst genomsnittlig tillit sett över de år som de har ingått i undersökningen. Som framgår av figuren finner vi de nordiska länderna i topp och i botten finner vi Polen, Grekland, Cypern, Portugal, Albanien och allra längst ned Turkiet, som inte har varit med i ESS sedan 2008.
+
+```{r graph_2002_2016, echo=FALSE, message=FALSE, cache=TRUE, fig.height=6}
+gghighlight_line(ess_trust, aes(year, ppltrst, colour = landsnamn), 
+                 predicate = mean(ppltrst) > 6.15|mean(ppltrst<3.68), size = 2) +
+    labs(x="År", y="Genomsnittlig tillit (0-10)", 
+         title="2. Mellanmänsklig tillit 2002-2016", 
+         subtitle="Europeiska länder med hög respektive låg genomsnittlig mellanmänsklig tillit",
+         caption="Källa: European Social Survey (ESS), av @richardohrvall, 2017") +
+    scale_x_continuous(breaks = seq(2002,2016,2)) +    
+    #    scale_color_brewer(palette = "Spectral") +
+    scale_color_viridis(discrete=TRUE) +
+    #    scale_color_ipsum() +
+    theme_ipsum_rc() 
+```
+
+
+De två första figurerna redovisar medelvärden för olika länder och tidpunkter. Det finns naturligtvis även en variation inom tid och rum. Figur 3 är en så kallad Joyplot (döpt efter ett klassiskt omslag till Joy Divisions skiva Unkown Pleasures), vilken illustrerar hur svaren fördelas över skalan i de olika länderna som ingick i ESS 2016. Även om det är svårt att urskilja exakta nivåer från en sådan graf framgår det ändå det generella mönstret. Det är en förhållandevis liten andel av de svenska respondenterna som har låg tillit och därmed använt sig av den nedre delen av svarsskalan, men det förekommer: 2 procent uppgav den lägsta tilliten (0) och 17 procent uppgav något värde mellan 0-4. I Polen, å andra sidan, använde en majoritet den lägre delen av svarsskalan.
+
+
+```{r graph_2016, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.height=6}
+# Joyplots 
+#### Over all countries
+
+# Latest wave of the data
+f <- ess_datafiles$file_name[nrow(ess_datafiles)]
+cn_names2 <- read_dta("C:/Dropbox/data/ESS/cntry_code.dta")
+attr(cn_names2$cntry, "format.stata") <- "%2s"
+ess_latest <- f %>% read_dta() %>% 
+    select(cntry, dweight, ppltrst, pplfair, pplhlp) %>% 
+    mutate(ppltrst = replace(ppltrst, ppltrst>10, NA),
+           pplhlp = replace(pplhlp, pplhlp>10, NA),
+           pplfair = replace(pplfair, pplfair>10, NA)) %>% 
+    group_by(cntry) %>% 
+    mutate(avg_ppltrst = weighted.mean(ppltrst, dweight, na.rm = TRUE)) %>% 
+    ungroup() %>% 
+    left_join(cn_names2, by = "cntry") 
+
+ess_latest %>% 
+    arrange(desc(avg_ppltrst)) %>% 
+    mutate(land = factor(landsnamn, levels = rev(unique(landsnamn)), ordered = TRUE)) %>% 
+    ggplot(aes(x=ppltrst, y=land, fill=land)) +
+        geom_density_ridges(rel_min_height = 0.01) + 
+        theme_ridges() +
+    scale_fill_cyclical(values = c("#5b8124", "#bad744")) +
+        theme(legend.position="none",plot.caption=element_text(size=9),
+              axis.title=element_text(size=12),
+              plot.title=element_text(size=24))+
+        labs(x="Tillit (0-10)", y="", caption="Källa: European Social Survey (ESS), av @richardohrvall, 2017", 
+             subtitle="Fråga: 'Skulle du säga att man i allmänhet kan lita på de flesta människor eller\natt man inte kan vara nog försiktig när man har att göra med andra människor?'\n0=man kan inte vara nog försiktig, 10=man kan lita på de flesta människor.",
+             title="3. Mellanmänsklig tillit 2016") +
+    theme(plot.subtitle=element_text(size=10)) +
+        scale_y_discrete(expand = c(0.01, 0)) +   # will generally have to set the `expand` option
+        scale_x_continuous(expand = c(0, 0), limits = c(0,10), breaks = seq(0,10,1)) # for both axes to remove unneeded padding
+
+```
+
+Det går även utmärkt att ta fram en motsvarande figur för att illustrera förändringen i Sverige över tid. Figur 4 är en sådan figur. Den visar att den svenska tilliten är stabil över tid, även om vi ser till hur svaren fördelas längs svarsskalan.
+
+```{r graph_2016_swe, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, fig.width=10, fig.height=6}
+sweden_dta <- . %>%
+    read_dta() %>% 
+    select(cntry, dweight, ppltrst, pplfair, pplhlp ) %>% 
+    filter(cntry=="SE") %>% 
+    mutate(ppltrst = replace(ppltrst, ppltrst>10, NA),
+           pplhlp = replace(pplhlp, pplhlp>10, NA),
+           pplfair = replace(pplfair, pplfair>10, NA)) 
+
+ess_se <- ess_datafiles %>% 
+    mutate(data = map(file_name, sweden_dta)) %>%
+    unnest() %>% 
+    select(-file_name) %>% 
+    left_join(cn_names, by = "cntry") 
+
+ess_se %>% 
+    mutate(fyear=factor(year)) %>% 
+        ggplot(aes(x=ppltrst, y=fyear, fill=fyear)) +
+        geom_density_ridges() + 
+        theme_ridges() +
+        theme(legend.position="none",plot.caption=element_text(size=9),
+              axis.title=element_text(size=12),
+              plot.title=element_text(size=24))+
+    scale_fill_cyclical(values = c("#5b8124", "#bad744")) +
+        labs(x="Tillit (0-10)", y="", caption="Källa: European Social Survey (ESS), av @richardohrvall, 2017", 
+             subtitle="Fråga: 'Skulle du säga att man i allmänhet kan lita på de flesta människor eller\natt man inte kan vara nog försiktig när man har att göra med andra människor?'\n0=man kan inte vara nog försiktig, 10=man kan lita på de flesta människor.",
+             title="4. Mellanmänsklig tillit i Sverige 2002-2016") +
+        scale_y_discrete(expand = c(0.01, 0)) +   # will generally have to set the `expand` option
+        scale_x_continuous(expand = c(0, 0), limits = c(0,10), breaks = seq(0,10,1))      # for both axes to remove unneeded padding
+
+```
+
+Det här var bara ett litet smakprov på vad som går att få ut av ESS. I datamaterialet finns mängder av andra variabler att studera. Då materialet är fritt tillgängligt är det med andra ord bara att ladda ned och börja med analyser. För den som inte känner sig hemma med statistikprogram finns även möjligheter att göra analyser via ett [webbgränssnitt på ESS webbplats](http://nesstar.ess.nsd.uib.no/webview/).
+
+*Mer att läsa*
+SOM-instutets mätningar av tillit finns i Sofia Arkhede och Henrik Oscarsson rapport [Svenska demokratitrender (se tabell 17)](http://som.gu.se/digitalAssets/1648/1648468_28-svenska-demokratitrender-2016.pdf) och i [Svenska trender 1986-2016](http://som.gu.se/digitalAssets/1649/1649642_32-svenska-trender-1986-2016.pdf) av Henrik Oscarsson och Annika Bergström (red.). Även SOM-kapitlet [Mellanmänsklig tillit bygger goda samhällen](http://som.gu.se/digitalAssets/1579/1579378_mellanm--nsklig-tillit-bygger-goda-samh--llen.pdf) av Sören Holmberg och Bo Rothstein rekommenderas.
