@@ -1,5 +1,5 @@
 +++
-abstract = "For several decades, Sweden has had a relatively high voter turnout, both in relation to the first half of the 20th century and in comparison with other countries. Still, even in this high-turnout context substantial differences in turnout can be found when comparing different population groups. Demographic characteristics and socio-economic resources are related to the propensity to vote. A more general conclusion is that voter turnout is associated with a higher level of equality in participation. The increase in turnout in recent Swedish elections has led to a more equal participation."
+abstract = "Our purpose is to critically discuss the quality of governability and scrutiny of, as well as insight in, enterprises owned by local government. Our analysis is empirically grounded in an in-depth case study of one of Sweden’s 10 largest municipalities."
 authors = ["Gissur Ó. Erlingsson", "Anna Thomasson", "Richard Öhrvall"]
 date = "2018-12-17"
 image_preview = ""
@@ -35,6 +35,5 @@ url_wp = ""
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
-Kapitel i Andrea Bonomi Savignon, Luca Gnan, Alessandro Hinna & Fabio Monteduro (red.) Hybridity in the Governance and Delivery of Public Services. 
-Bingley: Emerald Publishing Limited, sid. 31-52.
+Kapitel i Andrea Bonomi Savignon, Luca Gnan, Alessandro Hinna & Fabio Monteduro (red.) Hybridity in the Governance and Delivery of Public Services. Bingley: Emerald Publishing Limited, sid. 31-52.
 
