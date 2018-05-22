@@ -1,0 +1,28 @@
+---
+title: Avhopp från politiken och procenträkning
+author: Richard Öhrvall
+date: '2018-01-16'
+slug: avhopp-och-procentrakning
+categories:
+  - metod
+  - avhopp
+tags: []
+---
+*Inlägget har tidigare publicerats på [Politologerna](https://politologerna.wordpress.com/2018/01/16/avhopp-fran-politiken-och-procentrakning/).*
+
+I förra veckan blev jag intervjuad av SVT:s Rapport med anledning av ett inslag om avhopp från politiken. Inslaget lyfte fram hur många fritidspolitiker har svårt att kombinera det politiska uppdraget med arbetsliv och familjeliv. Även om det finns en starkare dramaturgi i reportage som handlar om avhopp med anledning av maktmissbruk är det välgörande med ett TV-inslag som visar hur det vanligen ser ut. En rad undersökningar visar nämligen att en klar majoritet av dem som lämnar politiken gör det framför allt av privata skäl och inte av skäl som är kopplade till hur de upplevt det politiska uppdraget. En majoritet har även en positiv erfarenhet av sin tid i politiken och fyra av tio kan tänka sig att kandidera igen. Även om det finns dem som har mörkare erfarenheter är alltså den generella bilden ljusare än vad som ofta framställs i media.
+
+När avhopp från politiken diskuteras avses vanligen folkvalda till riksdag, landstings- eller kommunfullmäktige som lämnar sitt uppdrag under pågående mandatperiod. Detta bland annat för att vi har bra statistik över detta tack vare att Valmyndigheten publicerar uppdaterade uppgifter på sin webbplats. Det är dock värt att notera att en person som enligt den här statistiken har hoppat av kan därför mycket väl ha kvar andra politiska uppdrag och fortfarande vara aktiv i politiken.
+
+När jag intervjuades var det med anledning av att de hade räknat fram att 3 301 folkvalda lämnat sina uppdrag från valdagen 2014 fram till slutet av 2017, vilket är en ökning med ungefär 400 personer jämfört med föregående mandatperiod. Den siffran inkluderar alla tre politiska nivåer – riksdag, landsting och kommun – och även avhopp bland dem som under mandatperioden kommit in som ersättare. Personligen tycker jag inte att det är den mest intressanta siffran, men den säger ändå något om omsättningen av folkvalda. Efter att jag intervjuades räknade SVT även fram andelen avhopp, vilket tyvärr blev fel (se [här](https://www.svt.se/nyheter/inrikes/fler-politiker-an-tidigare-lamnar-sina-uppdrag)) och felet spreds sedan via TT.
+
+Problemet var att de räknade andelen genom att dela totala antalet avhopp med antalet politiker som valdes in 2014.  vilket landade i 23 procent avhopp bland ledamöterna i kommunfullmäktige. Men då dessa avhopp även inkluderar avhopp bland ersättare avses olika saker i täljare och nämnare; det totala antalet avhopp innefattar inte bara avhopp bland dem som valdes in 2014, utan även avhopp bland personer som valts in som ersättare senare under mandatperioden. Om man istället ser till avhopp bland dem som faktiskt valdes in 2014 är andelen strax under 20 procent (fram till årsskiftet), vilket även det är en viss ökning jämfört med föregående mandatperiod.
+
+Det kan tyckas att några procentenheters skillnad inte är någon stor skillnad, men om andelarna sedan bryts efter partier och efter kommuner (som i [den här artikeln](https://mitti.se/val/fjarde-lanspolitiker-lamnat/) eller [det här SVT-inslaget](https://www.svt.se/nyheter/lokalt/jamtland/allt-fler-ledamoter-i-ragunda-lamnar-kommunpolitiken)) kan felen bli rätt stora (för avhopp bland Sverigedemokraternas ledamöter till kommunfullmäktige blir felet nästan 10 procentenheter). Det här är inget nytt – för fyra år sedan [bloggade jag](https://richardohrvall.com/2014/02/att-rakna-pa-avhopp/) om att journalister gjorde samma fel då som nu. Måhända är det naivt att tro på en bättring nu. Men för den som känner sig osäker inför procenträkning finns i dag en enklare utväg: SCB har tagit fram utmärkt, ny statistik över avhopp olika långt in i de senaste mandatperioden, vilken dessutom redovisas efter olika bakgrundsvariabler (se under Tabeller och diagram här och pressmeddelande [här](https://www.scb.se/hitta-statistik/statistik-efter-amne/demokrati/allmanna-val/allmanna-val-nominerade-och-valda/pong/statistiknyhet/allmanna-val-nominerade-och-valda/)).
+
+##Lästips
+Erlingsson, Gissur Ó. (2017), ”Problemet med förtida avhopp”, [Politologerna](https://politologerna.wordpress.com/2017/12/03/lucka-3-problemet-med-fortida-avhopp/).
+
+Järnbert, Mikaela & Johan Wilén (2016), Demokratins representanter–en studie av representativitet, delaktighet och syn på uppdraget, [rapport 23 i serien Demokratistatistik](https://www.scb.se/Statistik/_Publikationer/ME0107_2014A01J_BR_ME09BR1603.pdf), Stockholm: Statistiska centralbyrån.
+
+Erlingsson, Gissur Ó. & Richard Öhrvall (2010), [Politikens villkor: om engagemang och avhopp i politiken](http://liu.diva-portal.org/smash/get/diva2:358998/FULLTEXT01.pdf), Linköping: Centrum för kommunstrategiska studier.

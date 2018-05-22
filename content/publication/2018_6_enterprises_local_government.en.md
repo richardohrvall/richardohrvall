@@ -23,7 +23,7 @@ url_slides = ""
 url_video = ""
 url_wp = ""
 
-[[url_custom]]
+#[[url_custom]]
 #name = "Amazon"
 #url = ""
 
