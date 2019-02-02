@@ -19,7 +19,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "Doktorand i statsvetenskap"
+  course = "Doktor i statsvetenskap"
   institution = "Linköpings universitet"
   year = 2018
 
@@ -32,7 +32,7 @@ weight = 1
 
 +++
 
-Jag är doktorand i statsvetenskap vid Linköpings universitet, forskare vid Institutet för Näringslivsforskning (IFN) och affilierad till Institutet för analytisk sociologi. Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag för närvarande är tjänstledig från. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Statistisk metod och visualisering av data tillhör också mina intressen. Jag har erfarenhet av att arbeta med SAS, Python och SPSS, men jag använder framför allt Stata och R.
+Jag är doktor i statsvetenskap vid Linköpings universitet. Från och med mars 2019 är jag anställd som postdok vid Centrum för kommunstrategiska studier, Linköpings universitet. Jag är även affilierad forskare vid Institutet för Näringslivsforskning (IFN). Dessutom har jag en anställning vid Statistiska centralbyråns enhet för demokratistatistik som jag är tjänstledig från under min anställning som postdok. Mina forskningsintressen innefattar bland annat politiskt deltagande, social tillit och offentlig korruption. Statistisk metod och visualisering av data tillhör också mina intressen. Jag har erfarenhet av att arbeta med SAS, Python och SPSS, men jag använder framför allt Stata och R.
 
 Mitt CV hittar du [här](/cv/cv_richard_ohrvall_sv.pdf).
 
