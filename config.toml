@@ -1,7 +1,7 @@
 baseurl = "https://richardohrvall.rbind.io/"  
 # End your URL with a `/` trailing slash.
 title = "Richard Öhrvall"
-copyright = "&copy; 2017 Richard Öhrvall"
+copyright = "&copy; 2019 Richard Öhrvall"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
@@ -29,7 +29,7 @@ defaultContentLanguageInSubdir = true
 
 [params]
   name = "Richard Öhrvall"
-  role = "Ph.D. Student"
+  role = "Ph.D. Political Science"
   organization = "Linköping University"
   organization_url = ""
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
@@ -253,7 +253,7 @@ defaultContentLanguageInSubdir = true
 # Configure the English version of the website.
 [languages.en]
   languageCode = "en-us"
-  role = "Ph.D. Student"
+  role = "Ph.D. Political Science"
   organization = "Linköping University"
   phone = "+46 708 84 58 75"
 
@@ -270,7 +270,7 @@ defaultContentLanguageInSubdir = true
 # Swedish version  
 [languages.sv]
   languageCode = "sv"
-  role = "Doktorand"
+  role = "Doktor i statsvetenskap"
   Organization = "Linköpings universitet"
   phone = "0708-84 58 75"
   
