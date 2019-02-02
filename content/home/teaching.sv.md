@@ -14,4 +14,4 @@ weight = 60
 
 +++
 
-Jag undervisar framför allt i kvantitativa metoder på kandidat- och masternivå och handleder kandidatuppsatser vid Linköpings universitet. Höstterminen 2017 har jag dock ingen undervisning. 
+Jag undervisar framför allt i kvantitativa metoder på kandidat- och masternivå och handleder kandidatuppsatser vid Linköpings universitet. 
