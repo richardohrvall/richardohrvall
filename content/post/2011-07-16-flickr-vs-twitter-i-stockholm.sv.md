@@ -12,4 +12,4 @@ Min favorit bland kartografer, Eric Fischer, har skapat en ny sorts kartor. Tidi
 
 _Stockholm: Flickr vs Twitter (Eric Fischer):_
 
-[![See something or say something: Stockholm by Eric Fischer, on Flickr](http://farm7.static.flickr.com/6134/5935470698_67edaf0ba2.jpg)](http://www.flickr.com/photos/walkingsf/5935470698/in/photostream/)
+[![See something or say something: Stockholm by Eric Fischer, on Flickr](https://farm7.static.flickr.com/6134/5935470698_67edaf0ba2.jpg)](https://www.flickr.com/photos/walkingsf/5935470698/in/photostream/)
