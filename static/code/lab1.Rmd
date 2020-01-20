@@ -1,0 +1,301 @@
+---
+title: "Computer lab 1"
+author: "Richard Öhrvall"
+date: '2020-01-15'
+output: pdf_document
+---
+
+# Introduction
+
+This is the first computer lab for the course Discrete Choice Modeeling. At the end of this document you find your weekly assignment where you are supposed to use the techniques presented below.
+
+# R Markdown
+We will be using R Markdown documents for the computer labs and assignments in this course. Markdown is a simple formatting syntax for authoring documents. R Markdown is a version of Markdown where we also can include chunks of code and thereby get statistical results inot our documents. In R we can also "Knit" R Markdown documents, i.e. transform them, into pdf, html or even word files. You can use R Markdown to produce books and articles nicely formatted and ready for publication, but you do so much more, even constructing a blog in R Markdown.
+
+Some useful pointers on how to write in R Markdown are collected in this [R Markdown Cheat Sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf). If you really want to get into the weeds, there is an excellent book on R Markdown by Yihui Xie [available freely here](https://bookdown.org/yihui/rmarkdown/). 
+
+In R Markdown we can add chunks of code. For each of these chunks we can specify some options. The chunk below, named "setup", sets the option "echo" to TRUE for all the following chunks. We can override this in following chunks, but this is a way to set options that you commonly use, so you do not have to do it for each following code chunk.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Our data: Survival from the Titanic
+In today's computer class we will be using a dataset of individuals who were passengers on the Titanic. Titanic was a British passenger liner that sank in the Atlantic Ocean on April 15, 1912, after colliding with an iceberg during her maiden voyage. Titanic departed from Southampton and was supposed to go to New York City.
+
+Some data on the Titanic is actually loaded into R when you start the program (try writing Titanic in your console). But we will be using a dataset with some more information that comes with the titanic package. If you want more information about the dataset and its variables you can look [here](https://www.kaggle.com/c/titanic/data).
+
+
+```{r}
+# Load the titanic package, if you haven't installed type install.packages("titanic") first. The same goes for other packages in this lab.
+library(titanic)
+
+# The titanic package comes with two datasets and we'll be using the training dataset
+titanic <- titanic_train
+
+# You can see the class of the object
+class(titanic)
+
+# We can look at the first 10 or last 10 observations
+head(titanic, 10)
+tail(titanic, 10)
+
+# If you want to look at the data, you can click on "titanic" in the Environment tab or type View(titanic)
+
+# We can get some information about the variables using -str-
+str(titanic)
+
+# Another nice way to get some information about the variables is through -skim- in the skimr package
+library(skimr)
+skim(titanic)
+
+```
+
+## Using Tidyverse
+We will be using Tidyverse in this course. It is a collection of packages which share an underlying design philosophy, grammar, and view of how data should be structured. For more information about Tidyverse, see <https://www.tidyverse.org/>. By loading the tidyverse package, we are loading 8 key packages, but there are more packages included in the Tidyverse. 
+
+For data transformation, the key package is dplyr. We mainly use 5 verbs for data tranformatin in dplyr: select, filter, arrange, mutate, and summarise. For more information about data transformation, see [chapter 4 in Wickham and Grolemund 2017](https://r4ds.had.co.nz/transform.html). There is also a [cheat sheet for dplyr](https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf). We will do more data transformation in coming computer labs, this is just a brief introduction.
+
+Another key element of Tidyverse is the pipe, written as %>% (use key shortcut ctrl+shift+m in windows). The pipe makes it easier to write code that others can read (including future you!), especially when your code has a sequence of steps. One way to think of the pipe is to pronounce it "and then", e.g. you start with your data set, and then you select a few variabes, and then you filter out a few rows, and then... You can read more about the pipe in [chapter 18 in Wickham and Grolemund 2017](https://r4ds.had.co.nz/pipes.html).
+
+
+```{r, message=FALSE}
+library(tidyverse)
+
+##### If we want to select some variables we use -select-
+# Here we select Survived and Age to Ticket, and the pipe it to get the first 5 rows
+titanic %>% 
+  select(Survived, Age:Ticket) %>% 
+  head(5)
+
+# We can do the same without the pipe, but it gets more complicated to read
+head(select(titanic, Survived, Age:Ticket), 5)
+
+# We can also refer to variables by number referring to their order in the data set and get the same result
+titanic %>% 
+  select(2, 6:9) %>% 
+  head(5)
+
+# Or we can subset the data as we do it as in base R
+head(titanic[c(2, 6:9)], 5)
+
+# There many other ways we select variables, e.g. by how the variable name starts or ends.
+titanic %>% 
+  select(starts_with("S")) %>% 
+  head(5)
+
+# To remove one or many variables, put a minus sign in front of the variables
+titanic %>% 
+  select(-Survived, -Age:-Ticket) %>% 
+  head(5)
+
+##### We can filter rows by using -filter-
+# Here we filter the data so that we only get the male passengers.
+titanic %>% 
+  filter(Sex == "male") %>% 
+  head(5)
+  
+
+##### We can change the order of the rows by using -arrange-
+# Here by fare price, default is ascending
+titanic %>% 
+  arrange(Fare) %>% 
+  head(5)
+
+# We can also sort it descending
+titanic %>% 
+  arrange(desc(Fare)) %>% 
+  head(5)
+
+
+#### And we change a variable or create a new variable by using -mutate-
+# We could, for example, create a new logical variable -Young- that is true if Age is less than 25.
+titanic %>% 
+  mutate(Young = Age < 25) %>% 
+  head(5)
+
+# We can create many variables in one step. Here we also make a new variable with the fare in today's prices
+titanic %>% 
+  mutate(Young = Age < 25,
+         Fare_today = Fare * 57.06) %>% 
+  head(5)
+
+#### And we can get summary data using -summarise- (you can also use american spelling, i.e. -summarize-)
+# This is normally used together with -group_by- to group one or many variables
+# Let's say we want to compute the average fare and survival rate by sex
+titanic %>% 
+  group_by(Sex) %>% 
+  summarise(avg_fare = mean(Fare),
+            avg_surviv = mean(Survived))
+
+
+# This can all be piped together
+titanic %>% 
+  select(Pclass, Sex, Fare) %>% 
+  filter(Pclass == 1) %>% 
+  mutate(Fare_today = Fare * 57.06) %>% 
+  group_by(Sex) %>% 
+  summarise(avg_fare_today = mean(Fare_today))
+
+# Please note that we have not created any new objects. To do that we have to assign it to a new object using <-
+avg_fare_today <- titanic %>% 
+  select(Pclass, Sex, Fare) %>% 
+  filter(Pclass == 1) %>% 
+  mutate(Fare_today = Fare * 57.06) %>% 
+  group_by(Sex) %>% 
+  summarise(avg_fare_today = mean(Fare_today))
+
+
+```
+
+# Some basic statistics
+
+So let us look a bit at our data. You are probably familiar with one way of doing from your previous courses, but below I give a few examples of how you can make tabulations of variables.
+
+```{r}
+# We can count the data using dplyr
+titanic %>% 
+  count(Sex)
+
+# There are multiple ways to do a cross-tabulation in R
+# You can do it with dplyr, but there other ways that might be simpler
+# E.g. you can use -table-
+table(titanic$Sex, titanic$Survived)
+
+# Or -xtabs-
+xtabs(~ Sex + Survived, data = titanic)
+
+# If you want percentages you can use -prop.table-, 1 = row percentages, 2 = column percentages
+# In 2 steps
+a <- xtabs(~ Sex + Survived, data = titanic)
+prop.table(a, 1)
+
+# Or just one step
+prop.table(xtabs(~ Sex + Survived, data = titanic), 1)
+
+# The same using the pipe
+titanic %>% 
+  xtabs(~ Sex + Survived, data = .) %>% 
+  prop.table()
+
+# another option is -tabyl- in the janitor package
+library(janitor)
+titanic %>% 
+  tabyl(Sex, Survived) %>% 
+  adorn_percentages("row") %>% 
+  adorn_pct_formatting(digits = 2)
+
+# And you can use -CrossTable- in gmodels, which has a lot of flexibility
+library(gmodels)
+CrossTable(titanic$Sex, titanic$Survived)
+
+```
+
+## Summary statistics in a nice table
+When we write articles and reports, we want to present our results in nice looking tables. There are different packages for creating tables, such as xtable, kable and stargazer. We will mainly use stargazer. It is very flexible and has a lot of options. You can find more information about it here: <https://www.jakeruss.com/cheatsheets/stargazer/>.
+
+If we use stargazer on a whole data frame, we will get a table with summary statistics.
+
+Please note that we have to add "results='asis' to the code chunk in order for R to knit the table correctly to a pdf (it creates $LaTeX$ code that is used to create the pdf).
+
+```{r, echo=FALSE, results='asis'}
+library(stargazer)
+
+# Let's select a few variabels and pipe the data frame into -stargazer-, we set header = FALSE to suppress
+# information about the package creator, digits to control number of decimals, and then we add a title
+# and and comment below the table
+titanic %>% 
+  select(c(Survived, Sex:SibSp)) %>% 
+  stargazer(header = FALSE, digits = 2, title = "Summary statistics",
+            notes = "Data from Titanic data set")
+
+# The output in your console doesn't look good, but the table should look nice in the knitted pdf file.
+
+```
+
+# Linear Probability Model (LPM)
+So let's estimate some linear probability models (LPM) using our titanic data. This is a simply an ols model, just as you have done in the previous course.
+
+
+```{r, echo=FALSE, message=FALSE}
+library(broom)
+library(knitr)
+
+### Model 1
+# Let's begin with a simple model with only age as an independent variable, and we create an object for results
+survive_age_lpm1 <- lm(Survived ~ Age, data = titanic)
+
+# We can view the results using -summary-
+summary(survive_age_lpm1)
+
+# If we use -tidy- from the broom package, we get the results as a nice tibble (a data frame in Tidyverse).
+tidy(survive_age_lpm1) 
+
+# We can use options to get different results from -tidy-, e.g. conf.int to get the confidence intervals
+tidy(survive_age_lpm1, conf.int = TRUE) 
+
+### Model 2
+# Let's add Pclass, i.e. passenger class to the model
+survive_age_lpm2 <- lm(Survived ~ Age + Pclass, data = titanic)
+summary(survive_age_lpm2)
+
+# Pclass is an integer and is therefore treated as continuous variable in the model
+# So we have to change it to factor variable, we can do this in the following way
+
+survive_age_lpm2 <- titanic %>% 
+  mutate(Pclass = as_factor(Pclass)) %>% 
+  lm(Survived ~ Age + Pclass, data = .)
+
+summary(survive_age_lpm2)
+
+# We will talk more about factors in later computer labs.
+
+```
+
+## Summarise the regression model in a table
+Let's present our regression models in a nice looking table using stargazer.
+
+```{r, message=F, echo=F, results='asis'}
+
+# Our first model with only age
+stargazer(survive_age_lpm1, header = FALSE)
+
+# Our first model and our second model in one table
+stargazer(survive_age_lpm1, survive_age_lpm2, digits = 2, header = FALSE,
+          title = "Survival from Titanic. Linear probability model",
+          notes = "Data from the titanic R package.")
+
+```
+
+## Visualize the data
+We can also visulize our data, including the regression line. We will talk more about visualization of data later on in the course. This is just an example of how we can illustrate our data.
+
+```{r}
+# In ggplot2 we can change the theme for each individual plot, but we can also set the default theme
+# Here we set it to -theme_light-
+theme_set(theme_light())
+
+# Then we plot age and survived as a scatter plot using -geom_point- with alpha set to .1. 
+# And we add a linear regression line using -geom_smooth-
+titanic %>% 
+  ggplot(aes(Age, Survived)) +
+  geom_point(alpha = .1) +
+  geom_smooth(method = "lm", se = FALSE)
+
+```
+
+
+# Your weekly assignment
+Your weekly assignment is to answer the following two questions. You should submit 2 files in Lisam: one R Markdown file with your code and text and one file that is the knitted pdf version of the same R Markdown file. The pdf file should not include your code, just the output and your written answers to the questions. Remember that you can control the output from the code chunks by setting echo, messages, etc. to FALSE.
+
+The assignment is due on Friday at 15.00. 
+
+## Question 1
+Present a table with summary statistics for female Titanic passengers that were travelling in first class. The table should include the following variables: Age, Sibsp, and Fare. Include a relevant title and a comment mentioning the data source to the table.
+
+## Question 2
+Estimate two linear probability models where the outcome variable is survival. The first should have only age as an indepedent variable. The second should have age and sex as independent variables. Present the estimated results of both models in one table, where you also add a relevant title and a comment mentioning the data source to the table.
+
+Describe the models and interpret the coefficients, including how the relationship between age and survival changes when you add control for sex. The commenting text should be between 200 and 300 words.
+
+
