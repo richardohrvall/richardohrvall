@@ -8,8 +8,7 @@ publication_types = ["1"]
 publication = "Journal of Politics"
 publication_short = "Journal of Politics"
 selected = false
-title = "Big Brother Sees You, But Does He Rule You? The Relationship Between Birth Order
-and Political Candidacy"
+title = "Big Brother Sees You, But Does He Rule You? The Relationship Between Birth Order and Political Candidacy"
 
 url_appendix = ""
 url_article = ""
@@ -36,4 +35,4 @@ url_wp = "https://conpol.org/wp-content/uploads/2019/12/BigBrother.pdf"
 
 # More detail can easily be written below +++ using *Markdown* and $\rm \LaTeX$ math code.
 +++
-Accepted for publication in Journal of Politics
+Accepted for publication in *Journal of Politics*.
