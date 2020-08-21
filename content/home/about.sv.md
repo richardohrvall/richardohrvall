@@ -14,7 +14,8 @@ weight = 1
   interests = [
     "Politiskt deltagande",
     "Social tillit",
-    "Offentlig korruption"
+    "Offentlig korruption",
+    "Politisk polarisering"
   ]
 
 # List your qualifications (such as academic degrees).
