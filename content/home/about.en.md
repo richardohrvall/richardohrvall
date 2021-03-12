@@ -34,7 +34,8 @@ weight = 1
 +++
 
 
-I have Ph.D. in political science from Linköping University and I will work as a postdoc at Centre for Local Government Studies, Linköping University from March 2019 until March 2021. I am also an affiliated researcher at the Research Institute of Industrial Economics (IFN). During my postdoc will be on leave from my employment at Statistics Sweden. My research interests include political participation, social trust, public corruption and political polarization. Statistical methods and visualization of data are also among my interests. I have experience of using SAS, Python and SPSS, but I primarily use Stata and R.
+I have Ph.D. in political science from Linköping University and I employed as an associate senior lecturer at Centre for Local Government Studies, Linköping University . I am also an affiliated researcher at the Research Institute of Industrial Economics (IFN). My research interests include political participation, social trust, public corruption and political polarization. Statistical methods and visualization of data are also among my interests. I have experience of using SAS, Python and SPSS, but I primarily use Stata and R.
+
 
 My CV can be found [here](/cv/cv_richard_ohrvall_en.pdf).
 

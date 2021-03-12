@@ -1,13 +1,14 @@
 baseurl = "https://richardohrvall.rbind.io/"  
 # End your URL with a `/` trailing slash.
 title = "Richard Öhrvall"
-copyright = "&copy; 2019 Richard Öhrvall"
+copyright = "&copy; 2020 Richard Öhrvall"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 
 # Added as suggested 
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
+
 
 
 # Enable comments by entering your Disqus shortname
